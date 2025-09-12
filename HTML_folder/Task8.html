@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+    
+        .nav li {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            text-align: center;
+            gap: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: #f5ecec; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+        <h2 style="color: blueviolet;margin-bottom: 20px;font-size: 40px;">Document Page Structure</h2>
+       
+        <nav style="background-color: #b2b4a7; padding: 15px; border-radius: 8px; margin-bottom: 20px; display: flex; align-items: center;">
+            <ul style="list-style: none; margin: 0; padding: 0;">
+                <li style="display: inline-block; margin-right: 20px;"><a href="home" style="color: white; text-decoration: none; font-weight: bold; ">Home</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="home" style="color: white; text-decoration: none; font-weight: bold;">About</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="home" style="color: white; text-decoration: none; font-weight: bold;">Services</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="home" style="color: white; text-decoration: none; font-weight: bold;">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div style="border: 1px solid #ddd; border-radius: 5px; background-color: #f5ecec; max-width: 500px; padding: 10px; font-size: 15px;">
+        <h1><b>Registration Form</b></h1>
+
+        <form>
+            <div style="margin-bottom: 15px;">
+                <label for="firstname" style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(129, 4, 4);;">Firstname:</label>
+                <input type="text" id="firstname" name="firstname" 
+                   style="width: 90%; padding: 8px; border: 2px solid #4e1616; border-radius: 5px;" 
+                   placeholder="Enter your firstname">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="lastname" style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(129, 4, 4);;">Lastname:</label>
+                <input type="text" id="firstname" name="firstname" 
+                   style="width: 90%; padding: 8px; border: 2px solid #741818; border-radius: 5px;" 
+                   placeholder="Enter your lastname">
+            </div>
+             <div style="margin-bottom: 15px;">
+            <label for="email-advanced" style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(129, 4, 4);;">Email:</label>
+            <input type="email" id="email-advanced" name="email-advanced" 
+                   style="width: 90%; padding: 8px; border: 2px solid #3b0c0c; border-radius: 5px;" 
+                   placeholder="email@example.com">
+            </div>
+        
+            <div style="margin-bottom: 15px;">
+            <label for="password-input" style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(133, 23, 23);">Password:</label>
+            <input type="email" id="email" name="email" 
+                   style="width: 90%; padding: 8px; border: 2px solid #2b0d0d; border-radius: 5px;" 
+                   placeholder="Enter your password">
+            
+            </div>
+        
+            <div style="margin-bottom: 15px;">
+                <label for="age-input" style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(129, 4, 4);;">Age:</label>
+                <input type="number" id="age-input" name="age-input" 
+                   style="width: 90%; padding: 8px; border: 2px solid #1b0505; border-radius: 5px;" min="1" max="100"
+                   placeholder="Must be between 15 and 100">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="birthday" style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(129, 4, 4);;">Birthday</label>
+                <input type="date" id="birthday" name="birthday" required
+                   style="width: 70%; padding: 8px; border: 2px solid #4e1616; border-radius: 5px;">
+            </div>
+        
+            <div style="margin-bottom: 15px;">
+            <label for="bio" style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(129, 4, 4);;">Bio</label>
+            <textarea id="bio" name="bio" maxlength="500" required
+                      style="width: 70%; padding: 8px; border: 2px solid #4e1616; border-radius: 5px; height: 100px"
+                      placeholder="Tell us about yourself (max 500 characters)"></textarea>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+            <label>
+                <input type="checkbox" required>I consent to the terms and condtions (Required)
+            </label>
+
+        </div>
+
+        <button type="submit" 
+                style="background-color: #383530; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            Submit Form
+        </button>
+        <button type="reset" 
+                style="background-color: #888b8b; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-left: 10px;">
+            Reset Form
+        </button>
+    </div>
+    <img src="./images/chen-heng-97iD9iT0VW4-unsplash.jpg" alt="Fresh peppers" width="20%" height="20%" >
+    <figcaption style="margin-top: 8px; font-style: italic; color: brown; text-align: start;">
+        Fresh Peppers
+        </figcaption>
+</body>
+</html>
