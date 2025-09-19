@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+        .gen-container {
+            background-image: url(image/dev-benjamin-InGg2Hyv-d8-unsplash.jpg) ;
+            /* background: linear-gradient(125deg, #072c0aab, #6a6a6a); */
+            background-size: cover;
+            background-position: center;
+            
+            padding: 2rem;
+            margin: 0.3rem 0;
+            border-radius: 9px;
+            height: 600px;
+            /* overflow-y: scroll; */
+            overflow-y: scroll;
+            border: 2px solid rgb(20, 26, 11);
+            color: aliceblue;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            background: rgb(10, 74, 85);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0.1rem;
+           
+        }
+
+        .head {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 20px;
+            padding: 1.9rem;
+            
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .content {
+            padding: 1rem;
+            border: 1px solid white;
+            margin-top: 20px;
+        }
+
+        .content p {
+            color: aquamarine;
+        }
+
+        footer {
+            position: sticky;
+            bottom: 0%;
+            background: rgb(10, 74, 85);
+            padding: 1px;
+            margin-top: 40px;
+           
+        }
+        
+        footer p {
+            position: sticky;
+            bottom: 0;
+            padding-left: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="gen-container">
+        <div class="header">
+            <p class="head">Sticky Header</p>
+
+            <div class="nav">
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#end">Services</a>
+                    
+                    <button>Contact</button>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            <h3>Content 1</h3>
+            <p>This section contains content that you can scroll through</p>
+        </div>
+
+        <div class="content">
+            <h3>Content 2</h3>
+            <p>Another content section to scroll through. Although, there is a header that sticks. </p>
+        </div>
+
+        <div class="content">
+            <h3>Content 3</h3>
+            <p>This session or part contains the explanation about Flex-Wrap. It basically means that when the screen shrinks, the words come down to the nect line.</p>
+        </div>
+        
+        <div class="content" id="about">
+            <h3>Content 4</h3>
+            <p>This session or part still contains the explanation about Flex-Wrap. It basically means that when the screen shrinks, the words come down to the nect line. I did this because I need a content to scroll through.</p>
+        </div>
+
+        <footer>
+            <p id="end">This is the last part of my work.</p>
+        </footer>
+    </div>
+</body>
+</html>
