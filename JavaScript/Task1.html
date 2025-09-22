@@ -1,72 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
-</head>
-<body>
-    <div class="js-demo">
-    <h3>Personal Information Display</h3>
-    <p>Variables for my personal information:</p>
-    
-    <button class="demo-button" onclick="showStringConcatenation()">String Concatenation</button>
-    <button class="demo-button" onclick="showTemplateLiterals()">Template Literals</button>
-    
-    <div id="string-output" class="output">Click a button to explore string operations...</div>
-</div>
 
-<script>
-function showStringConcatenation() {
-    let firstName = "Abolore";
-    let lastName = "Sanni";
-    let age = 14;
-    let isStudent = false;
-    let favoriteColor = "black";
-    
-    // Old way: string concatenation with +
-    let greeting1 = "Hello, my name is " + firstName + " " + lastName + ".";
-    let info1 = "I am " + age + " years old.";
-    
-    // Can get messy with complex strings
-    let complex1 = "User: " + firstName + " " + lastName + " (Age: " + age + ")";
-    
-    let output = `
-        <strong>String Concatenation with + operator:</strong><br><br>
-        firstName = "${firstName}", lastName = "${lastName}", age = ${age}, isStudent = "${isStudent}", favoriteColor = "${favoriteColor}"<br><br>
-        
-    `;
-    
-    document.getElementById('string-output').innerHTML = output;
-}
-    function showTemplateLiterals() {
-        let firstName = "Abolore";
-        let lastName = "Sanni";
-        let age = 14;
-        let isStudent = false;
-        let favoriteColor = "black";
-        
-    
-    // Can include expressions
-    let mathExample = `Next 5 years I will be ${age + 5} years old.`;
-    let upperCase = `My name in caps: ${firstName.toUpperCase()} ${lastName.toUpperCase()}`;
-    
-    
-    let output = `
-        <strong>Template Literals with \` (backticks):</strong><br><br>
-        firstName = "${firstName}", lastName = "${lastName}", age = ${age}, isStudent = "${isStudent}", favoriteColor = "${favoriteColor}"<br><br>
-        
-        <strong>With expressions:</strong><br>
-        mathExample: "${mathExample}"<br>
-        upperCase: "${upperCase}"<br><br>
-    `;
-    
-    document.getElementById('string-output').innerHTML = output;
-}
-
-</script>
-</body>
-</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -74,6 +6,41 @@ function showStringConcatenation() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+
+    <style>
+    .js-demo {
+        background-color: #f8f9fa;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        border: 2px solid #007bff;
+        color: black
+    }
+    
+    .output {
+        background-color: #e9ecef;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        font-family: 'Courier New', monospace;
+        border-left: 4px solid #1a6692;
+    }
+    
+    .demo-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 5px;
+    }
+    
+    .demo-button:hover {
+        background-color: #0056b3;
+    }
+</style>
 </head>
 <body>
     <div class="js-demo">
@@ -100,7 +67,7 @@ function createPersonalInfo() {
     
     // Create formatted display
     const personalInfo = `
-        <div style="border: 2px solid ${favoriteColor}; padding: 15px; border-radius: 8px; background-color: #f9f9f9;">
+        <div style="border: 2px solid ${favoriteColor}; padding: 15px; border-radius: 8px; background-color: #f9f9f9; margin-top: 5px;">
             <h4 style="color: ${favoriteColor}; margin-top: 0;">Personal Information Card</h4>
             <p><strong>Name:</strong> ${firstName} ${lastName}</p>
             <p><strong>Current Age:</strong> ${age} years old</p>
